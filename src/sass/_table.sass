@@ -1,0 +1,88 @@
+$bgd-blue: rgba(30, 158, 230, 0.19)
+$talon-blue: #3F88C5
+$talon-grey: #4F4F4F
+
+.body
+  position: relative
+.main
+  // display: flex
+  // justify-content: space-between
+  padding: 0 30px
+.titles
+  padding: 0px 30px
+//   display: flex
+//   justify-content: space-between
+.title
+  display: flex
+  justify-content: space-between
+  font-weight: normal
+  font-size: 36px
+  padding: 10px 0 15px 0
+
+.column
+  &-items
+    display: flex
+    max-height: 950px
+    flex-direction: column
+    flex-wrap: wrap
+  &-item
+    position: relative
+    display: flex
+    justify-content: space-between
+    padding: 28px 0 47px 0
+.bgdblue
+  background: $bgd-blue
+.data-wraper
+  display: flex
+.person
+  width:400px
+  font-family: 'VAG World', 'Roboto', sans-serif
+  line-height: 96px
+  color: $talon-blue
+  text-align: center
+.table
+  width: 50%
+  font-family: 'VAG World', 'Roboto', sans-serif
+  line-height: 85px
+  color: $talon-grey
+  text-align: center
+.arrow
+  position: absolute
+  left: 50%
+  top: 53px
+  // transform: translateY(-50%)
+
+
+.newItem
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 1920px
+  background: #FFFFFF
+  color: #4F4F4F
+  font-size: 64px
+  font-weight: bold
+  text-align: center
+  padding: 118px 0
+  span
+    color: #EB5757
+
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity .5s
+.fade-enter, .fade-leave-to
+  opacity: 0
+
+.slide-fade-enter-active 
+  transition: all 0.8s ease-out
+
+.slide-fade-leave-active 
+  transition: all 0s ease-out
+// cubic-bezier(1, 0.5, 0.8, 1)
+
+.slide-fade-enter-from,
+.slide-fade-leave-to 
+  transform: translateX(20px)
+  opacity: 0
+  
